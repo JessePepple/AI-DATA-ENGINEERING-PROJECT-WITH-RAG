@@ -1,6 +1,5 @@
 # AI-Data-Engineering-Project-With-RAG
 
-# AI-Data-Engineering-Project-With-RAG
 
 This is an AI Data Engineering project focused on building a Retrieval-Augmented Generation (RAG) pipeline using LangChain and ChromaDB. I started by converting raw text into documents, followed by splitting the documents into smaller chunks for efficient processing. I then generated embeddings for each chunk and stored both the chunks and their corresponding embeddings in a ChromaDB vector database. Finally, I performed semantic search against the vector database to retrieve the most relevant information based on user queries.
 
@@ -62,9 +61,13 @@ The workflow remained largely the same as the previous text-based implementation
 Instead of storing the vector data in ChromaDB's default storage location, I configured the project to persist the vector data locally in a folder named `Vector`. I then added a new document to the vector store, allowing the RAG application to retrieve additional context from the newly ingested information. Finally, I used Docker Model Runner to support local model execution and make it easier to rerun and test the RAG workflow consistently.
 
 
+<img width="1146" height="566" alt="Screenshot 2026-10-07 at 17 57 38" src="https://github.com/user-attachments/assets/06758635-3f10-4e85-ba04-90f3fe62c1a1" />
+<img width="1146" height="566" alt="Screenshot 2026-10-07 at 17 58 04" src="https://github.com/user-attachments/assets/7cb042a4-ece9-440f-a636-b940e186d6fc" />
+<img width="1146" height="566" alt="Screenshot 2026-10-07 at 17 58 04" src="https://github.com/user-attachments/assets/7cb042a4-ece9-440f-a636-b940e186d6fc" />
+PDF → Extract Document → Chunking → Embeddings → Local Vector Storage → Add New Documents → RAG Context Retrieval → Docker Model Runner
 
+### Conclusion
 
-
-
+Overall, this project provided a practical implementation of a Retrieval-Augmented Generation (RAG) workflow, demonstrating how unstructured data can be transformed into useful context for an AI application. I progressed from working with raw text to processing real-world PDF documents, converting content into LangChain documents, chunking the data, generating embeddings, and storing the resulting vectors for semantic retrieval. I also explored local vector persistence using ChromaDB and a dedicated `Vector` folder, allowing additional documents to be incorporated into the application. Finally, I used Docker Model Runner to support local model execution and rerunning of the workflow. This project helped demonstrate the end-to-end process of preparing data for RAG applications while strengthening my understanding of document processing, embeddings, vect
 
 
